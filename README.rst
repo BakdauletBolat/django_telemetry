@@ -1,10 +1,11 @@
 =====
- Django telemetry
+.. image:: /django_telemetry/static/telemetry/img/logo.png
+  :width: 50
+  :alt: Alternative text
+
+Django telemetry
 =====
 
-.. image:: /django_telemetry/static/telemetry/img/logo.png
-  :width: 400
-  :alt: Alternative text
 
 
 This package is used to monitor and manage requests
