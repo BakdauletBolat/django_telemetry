@@ -22,7 +22,6 @@ class WebTelemetryMiddleware:
 
         response = self.get_response(request)
         start_time = time()
-        print(start_time)
         try:
             path_array = request.path.split('/')
             if 'admin' == path_array[1]:
@@ -40,9 +39,9 @@ class WebTelemetryMiddleware:
 
     def save(self, request, response,duration_time):
         if hasattr(request, 'user'):
-            user = request.user if type(request.user) == User else None
+            user_id = request.user.id if type(request.user) == User else None
         else:
-            user = None
+            user_id = None
 
         meta = request.META.copy()
         meta.pop('QUERY_STRING',None)
@@ -54,10 +53,10 @@ class WebTelemetryMiddleware:
             if remote_addr_fwd == meta['HTTP_X_FORWARDED_FOR']:
                 meta.pop('HTTP_X_FORWARDED_FOR')
 
-        post = None
-        uri = request.build_absolute_uri()
-        if request.POST and uri != '/login/':
-            post = dumps(request.POST)
+        # post = None
+        # uri = request.build_absolute_uri()
+        # if request.POST and uri != '/login/':
+        #     post = dumps(request.POST)
         
 
         tel = WebTelemetry.objects.using('django_telemetry').create(
@@ -78,7 +77,7 @@ class WebTelemetryMiddleware:
             is_secure = request.is_secure(),
             response=response.content,
             is_ajax = True,
-            user = user,
+            user_id = user_id,
             duration=duration_time,
         )
 

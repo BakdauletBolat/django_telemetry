@@ -28,7 +28,7 @@ class WebTelemetry(models.Model):
     is_ajax = models.BooleanField()
     response = models.TextField(null=True,blank=True)
     duration = models.CharField(null=True,blank=True,max_length=255)
-    user = models.ForeignKey(User,blank=True,null=True,on_delete=models.DO_NOTHING)
+    user_id = models.CharField(blank=True,null=True,max_length=255)
 
 
 class WebQuery(models.Model):
