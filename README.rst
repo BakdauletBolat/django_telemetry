@@ -1,5 +1,5 @@
 
-.. |Django telemetry| image:: /django_telemetry/static/telemetry/img/logo.png
+.. image:: /django_telemetry/static/telemetry/img/logo.png
   :width: 50
   :alt: Alternative text
 
