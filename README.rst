@@ -2,7 +2,10 @@
  Django telemetry
 =====
 
-![Alt text](/django_telemetry/static/telemetry/img/logo.png?raw=true "Optional Title")
+.. image:: /django_telemetry/static/telemetry/img/logo.png
+  :width: 400
+  :alt: Alternative text
+
 
 This package is used to monitor and manage requests
 
