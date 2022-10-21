@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
-Name: django-telemetry
-Version: 0.1
+Name: django-telemetrics
+Version: 0.2
 Summary: This package is used to monitor and manage requests
 Home-page: https://github.com/BakdauletBolat
 Author: Bakdaulet
@@ -9,7 +9,6 @@ License: BSD-3-Clause
 Platform: UNKNOWN
 Classifier: Environment :: Web Environment
 Classifier: Framework :: Django
-Classifier: Framework :: Django :: X.Y  # Replace "X.Y" as appropriate
 Classifier: Intended Audience :: Developers
 Classifier: License :: OSI Approved :: BSD License
 Classifier: Operating System :: OS Independent
@@ -21,10 +20,14 @@ Classifier: Programming Language :: Python :: 3.9
 Classifier: Topic :: Internet :: WWW/HTTP
 Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
 Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
 
-=====
 Django telemetry
-=====
+----------------
+
+.. image:: /django_telemetry/static/telemetry/img/logo.png
+  :width: 50
+  :alt: Alternative text
 
 This package is used to monitor and manage requests
 

@@ -3,6 +3,11 @@ README.rst
 pyproject.toml
 setup.cfg
 setup.py
+django_telemetrics.egg-info/PKG-INFO
+django_telemetrics.egg-info/SOURCES.txt
+django_telemetrics.egg-info/dependency_links.txt
+django_telemetrics.egg-info/requires.txt
+django_telemetrics.egg-info/top_level.txt
 django_telemetry/__init__.py
 django_telemetry/admin.py
 django_telemetry/apps.py
@@ -12,11 +17,6 @@ django_telemetry/routers.py
 django_telemetry/tests.py
 django_telemetry/urls.py
 django_telemetry/views.py
-django_telemetry.egg-info/PKG-INFO
-django_telemetry.egg-info/SOURCES.txt
-django_telemetry.egg-info/dependency_links.txt
-django_telemetry.egg-info/requires.txt
-django_telemetry.egg-info/top_level.txt
 django_telemetry/migrations/0001_initial.py
 django_telemetry/migrations/0002_webquery.py
 django_telemetry/migrations/0003_webtelemetry_response.py
