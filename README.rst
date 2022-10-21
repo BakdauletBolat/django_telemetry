@@ -1,5 +1,5 @@
 =====
-Django telemetry
+![Alt text](/django_telemetry/static/telemetry/img/logo.png?raw=true "Optional Title") Django telemetry
 =====
 
 This package is used to monitor and manage requests
